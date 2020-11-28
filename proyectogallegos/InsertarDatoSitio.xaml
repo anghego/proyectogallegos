@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="proyectogallegos.InsertarDatoSitio">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="INGRESO DE SITIOS TURISTICOS" 
+                   HorizontalOptions="CenterAndExpand"
+                   FontSize="30"/>
+
+            <Entry x:Name="txtIdSitio" Placeholder="Ingrese el codigo"/>
+            <Entry x:Name="txtNombreSitio" Placeholder="Ingrese el Nombre del lugar"/>
+            <Entry x:Name="txtLocalidad" Placeholder="Ingrese la localidad"/>
+            <Entry x:Name="txtCiudad" Placeholder="Ingrese la Ciudad"/>
+            <Entry x:Name="txtAltitud" Placeholder="Ingrese la Altitud"/>
+            <Entry x:Name="txtFoto" Placeholder="Ingrese la foto"/>
+            <Entry x:Name="txtLongitudx" Placeholder="Ingrese la longitud x"/>
+            <Entry x:Name="txtLongitudy" Placeholder="Ingrese la longitud y"/>
+            <Entry x:Name="txtEstadoSitio" Placeholder="Ingrese el estado"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Row="0" Grid.Column="0" Text="Insertar" x:Name="btnInsertarSitio" Clicked="btnInsertarSitio_Clicked"/>
+                <Button Grid.Row="0" Grid.Column="1" Text="Regresar" x:Name="btnRegresar" Clicked="btnRegresar_Clicked"/>
+
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

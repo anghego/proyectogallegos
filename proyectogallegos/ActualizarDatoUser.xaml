@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="proyectogallegos.ActualizarDatoUser">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="ACTUALIZAR USUARIOS"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+            <Entry x:Name="txtIdUsuarioAct" Placeholder="Ingrese el codigo a actualizar"/>
+            <Entry x:Name="txtUsuarioAct" Placeholder="Ingrese el username a actualizar"/>
+            <Entry x:Name="txtClaveAct" Placeholder="Ingrese la clave a actualizar"/>
+            <Entry x:Name="txtNombreAct" Placeholder="Ingrese el Nombre a actualizar"/>
+            <Entry x:Name="txtApellidoAct" Placeholder="Ingrese el Apellido a actualizar"/>
+            <Entry x:Name="txtCedulaAct" Placeholder="Ingrese la cedula a actualizar"/>
+            <Entry x:Name="txtTelefonoAct" Placeholder="Ingrese el telefono a actualizar"/>
+            <Entry x:Name="txtMailAct" Placeholder="Ingrese el mail a actualizar"/>
+            <Entry x:Name="txtEstadoClienteAct" Placeholder="Ingrese el estado a actualizar"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Row="0" Grid.Column="0" Text="Actualizar" x:Name="btnActualizarUser" Clicked="btnActualizarUser_Clicked"/>
+                <Button Grid.Row="0" Grid.Column="1" Text="Regresar" x:Name="btnRegresarUser" Clicked="btnRegresarUser_Clicked"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

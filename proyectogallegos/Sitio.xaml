@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="proyectogallegos.Sitio">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="SITIOS TURISTICOS " FontSize="20" HorizontalTextAlignment="Center">
+            </Label>
+            <ListView x:Name="MyListViewSitio">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+                                <Label x:Name="lblnombreSitio" Text="{Binding nombreSitio}">
+                                </Label>
+                                <Label x:Name="lbllocalidad" Text="{Binding localidad}">
+                                </Label>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+
+                </ListView.ItemTemplate>
+
+            </ListView>
+            <Button Text="Insertar"
+                 x:Name="btnInsertarSitio" Clicked="btnInsertarSitio_Clicked">
+            </Button>
+
+            <Button Text="Actualizar"
+                x:Name="btnActualizarSitio" Clicked="btnActualizarSitio_Clicked">
+            </Button>
+
+            <Button Text="Eliminar"
+                x:Name="btnEliminarSitio" Clicked="btnEliminarSitio_Clicked">
+            </Button>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

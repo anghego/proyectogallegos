@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="proyectogallegos.InsertarDatoUser"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="INGRESO DE USUARIOS" 
+                   FontSize="30"
+                   HorizontalOptions="CenterAndExpand" />
+
+            <Entry x:Name="txtIdUsuario" Placeholder="Ingrese el codigo"/>
+            <Entry x:Name="txtUsuario" Placeholder="Ingrese el username"/>
+            <Entry x:Name="txtClave" Placeholder="Ingrese la clave"/>
+            <Entry x:Name="txtNombre" Placeholder="Ingrese el Nombre"/>
+            <Entry x:Name="txtApellido" Placeholder="Ingrese el Apellido"/>
+            <Entry x:Name="txtCedula" Placeholder="Ingrese la cedula"/>
+            <Entry x:Name="txtTelefono" Placeholder="Ingrese el telefono"/>
+            <Entry x:Name="txtMail" Placeholder="Ingrese el mail"/>
+            <Entry x:Name="txtEstadoCliente" Placeholder="Ingrese el estado"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Row="0" Grid.Column="0" Text="Insertar" x:Name="btnInsertarUser" Clicked="btnInsertarUser_Clicked"/>
+                <Button Grid.Row="0" Grid.Column="1" Text="Regresar" x:Name="btnRegresar" Clicked="btnRegresar_Clicked"/>
+
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

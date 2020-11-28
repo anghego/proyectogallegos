@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="proyectogallegos.ActualizarDatoSitio">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="ACTUALIZAR SITIOS TURISTICOS" 
+                   HorizontalOptions="CenterAndExpand"
+                   FontSize="30"/>
+
+            <Entry x:Name="txtIdSitioAct" Placeholder="Ingrese el código a actualizar"/>
+            <Entry x:Name="txtNombreSitioAct" Placeholder="Ingrese el lugar a actualizar"/>
+            <Entry x:Name="txtLocalidadAct" Placeholder="Ingrese la localidad  a actualizar"/>
+            <Entry x:Name="txtCiudadAct" Placeholder="Ingrese la Ciudad a actualizar"/>
+            <Entry x:Name="txtAltitudAct" Placeholder="Ingrese la Altitud a actualizar"/>
+            <Entry x:Name="txtFotoAct" Placeholder="Ingrese la foto a actualizar"/>
+            <Entry x:Name="txtLongitudxAct" Placeholder="Ingrese la longitud x a actualizar"/>
+            <Entry x:Name="txtLongitudyAct" Placeholder="Ingrese la longitud y a actualizar"/>
+            <Entry x:Name="txtEstadoSitioAct" Placeholder="Ingrese el estado a actualizar"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Row="0" Grid.Column="0" Text="Actualizar" x:Name="btnActualizarSitio" Clicked="btnActualizarSitio_Clicked"/>
+                <Button Grid.Row="0" Grid.Column="1" Text="Regresar" x:Name="btnRegresarSitio" Clicked="btnRegresarSitio_Clicked"/>
+            </Grid>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

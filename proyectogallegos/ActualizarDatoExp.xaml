@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="proyectogallegos.ActualizarDatoExp">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="ACTUALIZAR EXPEDICION" 
+                   HorizontalOptions="CenterAndExpand"
+                   FontSize="30"/>
+            <Entry x:Name="txtIdExpedicionAct" Placeholder="Ingrese el codigo a actualizar"/>
+            <Entry x:Name="txtActividadAct" Placeholder="Ingrese la Actividad a actualizar"/>
+            <Entry x:Name="txtFechaAct" Placeholder="Ingrese la fecha a actualizar"/>
+            <Entry x:Name="txtDuracionAct" Placeholder="Ingrese el tiempo(horas) de duración a actualizar"/>
+            <Entry x:Name="txtEdadMinimaAct" Placeholder="Ingrese la EdadMinima a actualizar"/>
+            <Entry x:Name="txtCostoAct" Placeholder="Ingrese el costo a actualizar"/>
+            <Entry x:Name="txtNivelAct" Placeholder="Ingrese el nivel a actualizar"/>
+            <Entry x:Name="txtEstadoExpedicionAct" Placeholder="Ingrese el estado a actualizar"/>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Row="0" Grid.Column="0" Text="Actualizar" x:Name="btnActualizarExp" Clicked="btnActualizarExp_Clicked"/>
+                <Button Grid.Row="0" Grid.Column="1" Text="Regresar" x:Name="btnRegresarExp" Clicked="btnRegresarExp_Clicked"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

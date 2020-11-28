@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="proyectogallegos.Login">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="10,10">
+                <Label Text="EXPEDICIONES TURISTICAS"
+                       FontSize="30"
+                       VerticalOptions="Center" 
+                       HorizontalOptions="Center" />
+                <Label Text="Ingreso al sistema"
+                       FontSize="20"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"/>
+                <ActivityIndicator x:Name="waitActivityIndicator"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"/>
+                <Image Source="https://www.imagineecuador.com/files/2014/08/chimborazo9.png"
+                       WidthRequest="200"/>
+                <Label Text="Usuario"
+                       HorizontalOptions="Start"
+                       VerticalOptions="Center"/>
+                <Entry x:Name="txtUsuario"
+                       Placeholder="Ingrese su usuario"
+                       HorizontalOptions="FillAndExpand"
+                       VerticalOptions="Center"/>
+                <Label Text="Clave"
+                       HorizontalOptions="Start"
+                       VerticalOptions="Center"/>
+                <Entry x:Name="txtClave"
+                       Placeholder="Ingrese su clave"
+                       IsPassword="True"                 
+                       HorizontalOptions="FillAndExpand"
+                       VerticalOptions="Center"/>
+                <Button x:Name="btnIngresar"
+                        Text="INGRESAR"
+                        Clicked="btnIngresar_Clicked"
+                        BackgroundColor="Blue"
+                        TextColor="White"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="Center"/>
+                            
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

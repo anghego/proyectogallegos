@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="proyectogallegos.Menu"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="lblMenu" />
+            <Label Text="MENU APP EXPEDICIONES TURISTICAS" 
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   FontSize="30" />
+
+            <Button x:Name="btnUsuario" Text="USUARIOS" Clicked="btnUsuario_Clicked"></Button>
+            <Button x:Name="btnSitio" Text="SITIO" Clicked="btnSitio_Clicked"></Button>
+            <Button x:Name="btnExpedicion" Text="EXPEDICION" Clicked="btnExpedicion_Clicked"></Button>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Row="0" Grid.Column="0" Text="CERRAR" x:Name="btnCerrar" Clicked="btnCerrar_Clicked"/>
+
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

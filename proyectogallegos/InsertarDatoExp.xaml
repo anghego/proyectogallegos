@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="proyectogallegos.InsertarDatoExp">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="INGRESO DE EXPEDICIONES" 
+                   HorizontalOptions="CenterAndExpand"
+                   FontSize="30"/>
+
+            <Entry x:Name="txtIdExpedicion" Placeholder="Ingrese el codigo"/>
+            <Entry x:Name="txtActividad" Placeholder="Ingrese el tipo de Actividad"/>
+            <Entry x:Name="txtFecha" Placeholder="Ingrese la fecha"/>
+            <Entry x:Name="txtDuracion" Placeholder="Ingrese el tiempo(horas) de duración"/>
+            <Entry x:Name="txtEdadMinima" Placeholder="Ingrese la EdadMinima"/>
+            <Entry x:Name="txtCosto" Placeholder="Ingrese el costo"/>
+            <Entry x:Name="txtNivel" Placeholder="Ingrese el nivel"/>
+            <Entry x:Name="txtEstadoExpedicion" Placeholder="Ingrese el estado"/>
+            
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Row="0" Grid.Column="0" Text="Insertar" x:Name="btnInsertarExp" Clicked="btnInsertarExp_Clicked"/>
+                <Button Grid.Row="0" Grid.Column="1" Text="Regresar" x:Name="btnRegresar" Clicked="btnRegresar_Clicked"/>
+
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

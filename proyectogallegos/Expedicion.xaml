@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="proyectogallegos.Expedicion">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="EXPEDICIONES" FontSize="20" HorizontalTextAlignment="Center">
+            </Label>
+            <ListView x:Name="MyListViewExp">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+                                <Label x:Name="lblactividad" Text="{Binding actividad}">
+                                </Label>
+                                <Label x:Name="lblfecha" Text="{Binding fecha}">
+                                </Label>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+
+                </ListView.ItemTemplate>
+
+            </ListView>
+            <Button Text="Insertar"
+                 x:Name="btnInsertarExp" Clicked="btnInsertarExp_Clicked">
+            </Button>
+
+            <Button Text="Actualizar"
+                x:Name="btnActualizarExp" Clicked="btnActualizarExp_Clicked">
+            </Button>
+
+            <Button Text="Eliminar"
+                x:Name="btnEliminarExp" Clicked="btnEliminarExp_Clicked">
+            </Button>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
